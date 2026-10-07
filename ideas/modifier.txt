@@ -1,6 +1,0 @@
-mut # mutable
-pub # public
-ext # extern
-
-# modifier -> mut? ( pub | ext )
-# ident type modifier?

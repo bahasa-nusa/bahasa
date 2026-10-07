@@ -1,4 +1,0 @@
-User stc {
-    name str
-    age i32
-}

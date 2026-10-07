@@ -1,8 +1,24 @@
-# Evolution & Design
+# Nusa
 
-This repository tracks the ongoing development and specification of the **Aerell programming language**.
+Bahasa pemrograman.
 
-> Feel free to open an issue or discussion to share your thoughts on the language's direction.
+## Referensi Bahasa
+- C
+- C++
+- Go
+- Rust
+- Zig
+- Dart
+- Python
+- Mojo
 
-## License
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+## Karakteristik
+- Mudah
+- Simpel
+- Jelas
+- Terprediksi
+- Cepat
+- Aman
+
+## Lisensi
+Proyek ini dilisensikan di bawah Apache License 2.0 – lihat berkas [LICENSE](LICENSE) untuk rincian lebih lanjut.
