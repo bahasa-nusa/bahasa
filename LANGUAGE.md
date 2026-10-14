@@ -9,6 +9,7 @@ Nusa menggunakan bahasa Indonesia sebagai identitas utama sintaksnya. Tujuannya 
 Prinsip desain:
 
 - **Indonesia sebagai identitas inti.** Keyword dan elemen inti bahasa mengikuti filosofi bahasa Indonesia.
+- **Pengembangan terminologi Indonesia.** Nusa mendorong pengembangan kosakata dan istilah teknis yang berakar dari bahasa Indonesia, termasuk pembentukan istilah baru apabila dapat memperjelas konsep, memperkuat konsistensi terminologi, atau mendukung identitas bahasa. Istilah baru harus didefinisikan dan digunakan secara konsisten.
 - **Jelas dan mudah dibaca.** Sintaks sebaiknya mudah dipahami, termasuk oleh pengguna baru.
 - **Konsisten.** Fitur baru mengikuti pola yang sudah ada kecuali ada alasan kuat untuk berbeda.
 - **Pragmatis.** Tidak semua istilah teknis atau nama harus diterjemahkan jika istilah internasional lebih tepat atau sudah menjadi konvensi.
@@ -30,7 +31,7 @@ Kebijakan ini membedakan sintaks inti dari kode yang ditulis pengguna dan dari e
 | Pustaka pihak ketiga | Mengikuti desain serta konvensi masing-masing pustaka |
 | Istilah standar internasional | Dapat dipertahankan jika lebih jelas atau sudah mapan |
 
-Identitas bahasa tidak mengharuskan setiap bagian kode menggunakan bahasa Indonesia. Tujuannya adalah konsistensi sintaks inti, bukan menerjemahkan setiap nama yang ditemui.
+Identitas bahasa tidak mengharuskan setiap bagian kode menggunakan bahasa Indonesia. Tujuannya adalah konsistensi sintaks inti dan pengembangan terminologi yang terarah, bukan menerjemahkan setiap nama yang ditemui.
 
 ## 3. Sintaks dan Keyword
 
@@ -47,16 +48,21 @@ Dalam merancang atau menambahkan keyword:
 
 Contoh seperti `fungsi`, `misalkan`, `kembalikan`, dan `cetak` hanya boleh dianggap sebagai keyword atau API resmi jika memang didukung oleh versi Nusa yang bersangkutan. Contoh dalam dokumen desain tidak dengan sendirinya menetapkan bahwa suatu sintaks telah diimplementasikan.
 
-## 4. Penamaan
+## 4. Penamaan dan Terminologi
 
-Konvensi penamaan harus membantu keterbacaan tanpa membatasi cara pengguna menyusun program secara berlebihan.
+Konvensi penamaan harus membantu keterbacaan tanpa membatasi cara pengguna menyusun program secara berlebihan. Nusa dapat mengembangkan istilah teknis baru yang berakar dari bahasa Indonesia, termasuk istilah yang belum dikenal secara luas, selama istilah tersebut memiliki definisi yang jelas dan digunakan secara konsisten.
 
 - **Keyword:** mengikuti bahasa Indonesia sesuai desain inti Nusa.
 - **Fungsi bawaan dan tipe inti:** mengikuti terminologi resmi Nusa.
+- **Terminologi teknis Indonesia:** dapat dibentuk untuk menjelaskan konsep komputasi, arsitektur, dan komponen teknis. Kebaruan suatu istilah bukan alasan untuk menolaknya, tetapi istilah tersebut harus memiliki makna yang terdefinisi dan alasan penggunaan yang dapat dipahami.
+- **Padanan internasional:** istilah teknis baru sebaiknya disertai padanan atau penjelasan bahasa Inggris apabila membantu pemahaman dan kolaborasi internasional.
 - **Variabel dan fungsi buatan pengguna:** fleksibel, dengan konvensi yang dianjurkan dalam panduan gaya jika diperlukan.
 - **Modul dan pustaka:** menggunakan nama yang jelas, stabil, dan sesuai konteks.
 - **Nama dari pustaka eksternal:** tidak harus diterjemahkan atau diubah demi menyesuaikan bahasa Nusa.
 - **Nama berkas dan direktori:** gunakan nama yang mudah dipahami dan pertahankan konvensi ekosistem yang sudah mapan bila bermanfaat.
+- **Istilah internasional:** dapat dipertahankan apabila lebih tepat, lebih jelas, atau sudah menjadi konvensi yang relevan.
+
+Istilah teknis resmi harus dibedakan dari nama internal implementasi. Tidak setiap nama modul, kelas, fungsi internal, atau komponen compiler otomatis menjadi terminologi resmi bahasa. Dokumentasi istilah teknis sebaiknya menjelaskan definisi, konteks penggunaan, dan padanan internasional yang relevan.
 
 Nusa tidak perlu mewajibkan semua pengenal menggunakan bahasa Indonesia. Nama yang mudah dipahami dan konsisten lebih penting daripada kemurnian bahasa secara mutlak.
 
@@ -96,6 +102,7 @@ Prinsipnya:
 - Pustaka pihak ketiga dapat mengikuti kebutuhan domain dan konvensinya sendiri.
 - Konvensi impor, modul, dan struktur paket harus dijelaskan dalam dokumentasi teknis yang sesuai.
 - Contoh kode harus mencerminkan API yang benar-benar tersedia.
+- Istilah teknis resmi Nusa harus dibedakan dari nama internal implementasi; nama internal tidak otomatis menjadi istilah resmi.
 
 Detail teknis mengenai sistem modul, distribusi paket, pustaka standar, dan kompatibilitas ditetapkan dalam spesifikasi atau dokumentasi implementasi terkait, bukan diasumsikan oleh dokumen ini.
 
@@ -116,30 +123,33 @@ Kualitas diagnostik lebih penting daripada sekadar menerjemahkan pesan. Pesan ya
 
 Dokumentasi bahasa Nusa tersedia dalam bahasa Indonesia dan Inggris sesuai kebijakan proyek.
 
-Dokumentasi sintaks dan API harus menjelaskan perilaku yang sama dalam kedua bahasa. Nama keyword, identifier API, contoh kode, dan hasil program tidak boleh berubah hanya karena bahasa penjelasannya berbeda.
+Dokumentasi sintaks, API, dan terminologi harus menjelaskan perilaku atau makna yang sama dalam kedua bahasa. Nama keyword, istilah resmi Nusa, identifier API, contoh kode, dan hasil program tidak boleh berubah hanya karena bahasa penjelasannya berbeda.
 
-Untuk setiap fitur yang didokumentasikan, usahakan mencakup:
+Untuk setiap fitur atau istilah teknis yang didokumentasikan, usahakan mencakup:
 
-- Tujuan dan perilaku fitur.
-- Bentuk sintaks atau API yang benar.
-- Contoh yang dapat diverifikasi.
+- Tujuan dan perilaku fitur, atau definisi istilah.
+- Bentuk sintaks atau API yang benar, jika relevan.
+- Contoh yang dapat diverifikasi, jika relevan.
 - Batasan, kasus khusus, dan pesan error yang relevan.
-- Status dukungan pada versi Nusa yang jelas.
+- Padanan atau penjelasan bahasa Inggris jika membantu pemahaman.
+- Status dukungan pada versi Nusa yang jelas, jika berlaku.
 
-Jangan mendokumentasikan fitur seolah sudah tersedia jika fitur tersebut masih berupa usulan atau belum didukung implementasi.
+Jangan mendokumentasikan fitur seolah sudah tersedia jika fitur tersebut masih berupa usulan atau belum didukung implementasi. Demikian pula, istilah yang masih berupa usulan tidak boleh disajikan seolah sudah menjadi terminologi resmi.
 
 ## 9. Perubahan Desain Bahasa
 
-Perubahan pada sintaks, keyword, semantik, API inti, atau konvensi publik harus dipertimbangkan dengan hati-hati karena dapat memengaruhi kode pengguna dan dokumentasi.
+Perubahan pada sintaks, keyword, semantik, API inti, atau terminologi resmi harus dipertimbangkan dengan hati-hati karena dapat memengaruhi kode pengguna, dokumentasi, dan pemahaman konsep.
 
 Sebelum perubahan besar diterapkan:
 
-1. Jelaskan masalah yang ingin diselesaikan.
-2. Tulis usulan dan contoh sebelum serta sesudah perubahan.
-3. Pertimbangkan alternatif, konsistensi, dan kemudahan penggunaan.
+1. Jelaskan masalah atau kebutuhan yang ingin diselesaikan.
+2. Tulis usulan dan contoh sebelum serta sesudah perubahan, jika relevan.
+3. Pertimbangkan alternatif, konsistensi, kejelasan, dan kemudahan penggunaan.
 4. Evaluasi dampak terhadap kode yang sudah ada, tooling, dan dokumentasi.
 5. Catat keputusan serta alasan akhirnya.
 6. Perbarui contoh dan dokumentasi yang terdampak.
+
+Usulan terminologi baru sebaiknya menyertakan definisi, alasan pemilihan, konteks penggunaan, dan padanan internasional yang relevan. Istilah baru dapat diterima meskipun belum dikenal luas, tetapi tidak semata-mata karena keunikannya: istilah tersebut harus membantu membangun kosakata yang jelas, konsisten, dan berguna.
 
 Perubahan yang memutus kompatibilitas perlu dinyatakan dengan jelas dan, jika memungkinkan, disertai panduan migrasi. Prosedur versi dan kebijakan kompatibilitas yang lebih rinci dapat ditetapkan dalam dokumentasi rilis atau spesifikasi bahasa.
 
@@ -149,12 +159,13 @@ Nusa tidak bertujuan untuk:
 
 - Menerjemahkan setiap nama berkas, istilah, protokol, atau pustaka.
 - Menganggap bahasa Indonesia otomatis membuat semua konsep pemrograman mudah.
-- Mengorbankan kejelasan sintaks demi mempertahankan istilah tertentu.
+- Mengorbankan kejelasan sintaks atau terminologi demi mempertahankan istilah tertentu.
+- Menolak istilah baru hanya karena belum dikenal luas.
 - Mengklaim kompatibilitas atau kemampuan yang belum diimplementasikan.
 - Menyamakan preferensi bahasa dengan kualitas teknis.
 
-Bahasa Indonesia adalah dasar identitas Nusa, sedangkan kualitas desain dan implementasi menentukan seberapa baik bahasa tersebut digunakan.
+Bahasa Indonesia adalah dasar identitas Nusa. Pengembangan terminologi memperkaya identitas tersebut, sedangkan kualitas desain, definisi yang jelas, dan implementasi menentukan seberapa baik istilah serta bahasa itu digunakan.
 
 ---
 
-**Ringkasnya:** Nusa mempertahankan bahasa Indonesia pada sintaks inti, mengutamakan konsistensi dan keterbacaan, serta menggunakan pendekatan pragmatis untuk penamaan, API, komentar, dan ekosistemnya. Setiap keputusan desain harus mendukung bahasa yang jelas, berguna, dan dapat dikembangkan secara berkelanjutan.
+**Ringkasnya:** Nusa mempertahankan bahasa Indonesia pada sintaks inti dan secara sadar mengembangkan kosakata teknis yang berakar dari bahasa Indonesia. Istilah baru tidak harus sudah dikenal luas, tetapi perlu didefinisikan, digunakan secara konsisten, dan dijelaskan dengan padanan internasional jika bermanfaat. Setiap keputusan desain harus mendukung bahasa yang jelas, berguna, dan dapat dikembangkan secara berkelanjutan.
