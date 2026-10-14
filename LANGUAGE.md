@@ -73,18 +73,24 @@ Komentar dapat ditulis dalam bahasa Indonesia atau bahasa lain sesuai audiens da
 Contoh ilustratif:
 
 ```nusa
-// Menghitung luas persegi panjang
-fungsi hitung_luas(panjang, lebar) {
-    kembalikan panjang * lebar
+# Menghitung luas persegi panjang
+hitung_luas(panjang d64, lebar d64) d64 pub {
+    jk panjang < 0.0 || lebar < 0.0 {
+        kem -1.0 # Nilai penanda (sentinel) untuk input tidak valid
+    }
+    kem panjang * lebar
 }
 ```
 
 Versi dengan komentar untuk audiens internasional juga dapat diterima:
 
 ```nusa
-// Calculate the area of a rectangle
-fungsi hitung_luas(panjang, lebar) {
-    kembalikan panjang * lebar
+# Calculate the area of a rectangle
+hitung_luas(panjang d64, lebar d64) d64 pub {
+    jk panjang < 0.0 || lebar < 0.0 {
+        kem -1.0 # Sentinel value for invalid input
+    }
+    kem panjang * lebar
 }
 ```
 
