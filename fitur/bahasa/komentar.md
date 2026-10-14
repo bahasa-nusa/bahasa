@@ -1,19 +1,13 @@
 # Komentar
 
-Rumus:
-``` nusa
-# isi_komentar?
-```
+Komentar diawali dengan tanda `#`. Nusa hanya mendukung komentar satu baris, tanpa komentar dokumentasi. Untuk membuat komentar beberapa baris, gunakan tanda `#` di setiap baris.
 
-Contoh:
-``` nusa
+```nusa
 # Ini adalah komentar satu baris
 ```
 
-``` nusa
-# Ini kalau
-# Mau komentar
-# Banyak baris
+```nusa
+# Ini adalah
+# komentar
+# beberapa baris
 ```
-
-Komentar di awali dengan tanda `#`, dan ini adalah satu-satu nya cara untuk membuat komentar, tidak ada komentar banyak baris dan komentar dokumentasi untuk menjaga Nusa tetap mudah dan simpel.
